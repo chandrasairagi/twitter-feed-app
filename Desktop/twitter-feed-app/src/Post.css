@@ -1,0 +1,164 @@
+.post{
+   display: flex;
+   align-items:flex-start;
+   border-bottom:1px solid var(--twitter-background);
+   padding-bottom:10px;
+}
+.post:hover{
+    background-color:var(--twitter-background);
+    transition:background-color 0.3s ease-out;
+}
+.post-body{
+    flex:1;
+    padding:10px;
+    max-height: 598px;
+}
+.post-body > img{
+    border-radius:30px;
+    
+    margin-right:50px;
+}
+.post-headerText{
+    margin-bottom:10px;
+
+   
+}
+.post-headerDescription{
+     margin-bottom:10px;
+    max-width: 590px;
+   
+
+}
+.post-footer{
+    display:flex;
+    justify-content:space-around;
+    /* align-items: flex-start; */
+    margin-top:10px;
+    margin-bottom: 0;
+}
+.post-badge{
+    color:var(--twitter-color);
+    font-size:small;
+   
+    
+}
+.post-headerspecial{
+    font-weight:600;
+    font-size:12px;
+    color:grey;
+}
+.post-avatar{
+    padding:20px;
+}
+.user-name{
+    
+    margin-top:8px;
+}
+
+.post-headerText{
+   
+    width:100%;
+    display: flex;
+    position:relative;
+    
+    
+}
+.post-body img{
+    max-width: 100%;
+    max-height: 500px;
+}
+.time-ago{
+    padding-left:5px;
+   
+}
+.time-ago:hover{
+    text-decoration:underline;
+}
+.post-more{
+    position:absolute;
+     right:8%; 
+     transition:all 1s ease-out;
+}
+    
+
+.post-more :first-child:hover{
+    background-color:white;
+     border-radius:80px;
+    
+}
+
+.chat-icon:hover{
+    color:rgb(97, 199, 224);
+    cursor: pointer;
+
+}
+.retweet-icon:hover{
+    color:rgb(115, 243, 115);
+    cursor: pointer;
+
+}
+.like-icon:hover{
+    color:rgb(238, 65, 131);
+    
+   
+   
+    cursor: pointer;
+    
+
+}
+.filled-like-icon{
+    color:rgb(223, 89, 89)
+}
+.bookmark-icon:hover{
+    color:rgb(97, 199, 224);
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width:980px){
+  
+     .post-more{
+        right: 0%;
+
+    }
+    .post-headerText{
+        font-size: 13px;
+    }
+    .post-badge{
+        font-size: small !important;
+    }
+    
+}
+@media screen and (max-width:388px){
+
+    .post-headerText{
+        font-size: 50%;
+        margin-bottom:3px;
+    }
+  
+    .post-avatar{
+    padding:5%;
+    font-size: smaller !important;
+}
+.post-more-icon{
+    font-size: xx-small !important;
+}
+.post-headerDescription{
+    font-size: 60%;
+}
+.like-icon , .chat-icon , .filled-like-icon , .bookmark-icon , .retweet-icon{
+    font-size: x-small !important;
+    padding:3px;
+    
+}
+
+}
+
+
+ 
+    
+
+
+
+    
